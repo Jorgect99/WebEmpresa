@@ -1,0 +1,2 @@
+reversed
+sirve para darle vuelta a una lista y es util para mostrar del artiuclo mas viejo al mas nuevo.
