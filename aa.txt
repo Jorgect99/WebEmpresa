@@ -1,2 +1,56 @@
 reversed
 sirve para darle vuelta a una lista y es util para mostrar del artiuclo mas viejo al mas nuevo.
+
+|date:"SHORT_DATE_FORMAT"
+para formatear una fecha
+
+| linebreaks
+para respetar los saltos de linea
+
+a un campo many to many se ocupa el .all para acceder al queryset
+
+post.categories.all
+utilizar un for para iterar en ese queryset
+{% for category in post.categories.all %}
+	{{ category.name }}{% if not forloop.last %},{% endif %}
+{% endfor %}
+
+<category_id> ---> Siempre una cadena de caracteres ---> <int:category_id>
+
+
+.get 
+permite obtener un unico registro
+
+get_object_or_404
+mejor opcion que .get para controlar que hay un error
+
+.post_set.all
+las relaciones existen en dos sentidos 
+puedes hacer servir un modelo otro modelo relacionado con el una _ set all
+te busca todas la instacias del modelo relacionado con el primer modelo.
+solo se pueden tener una relacion a dos bandas con el mismo nombre generico.
+
+related_name=
+para cambiar el nombre de la relacion many to many 
+
+|slice:':6'
+
+.is_authenticated
+para saber si esta autenticado
+
+
+Plantilla: 'admin:APP_MODEL_action' obj.id
+
+
+Slug
+un campo slug nos obligara a utilizar caracteres alfanumericos - o / es perfecto para utilizarlo
+como clave.
+
+Contexto
+Algo que forma parte de los templates
+
+ckeditor info
+https://github.com/django-ckeditor/django-ckeditor
+
+|safe 
+es contenido seguro
