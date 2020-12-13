@@ -54,3 +54,26 @@ https://github.com/django-ckeditor/django-ckeditor
 
 |safe 
 es contenido seguro
+
+
+form.as_p
+mostrar como paragrafo
+
+action=""
+valida los datos en la misma pagina
+
+{{ csrf_token }}
+Se usa para prevenir la falsificacion de peticion en citios cruzados
+
+
+request.POST
+un diccionario donde se almacenan los datos post que se envian 
+
+request.method
+tipo de metodo que se a hecho la peticion a la pagina
+
+redirect
+redirecciona a un template
+
+reverse
+igual a un templat tag url
